@@ -23,7 +23,7 @@ for solver in ${SOLVER_LIST}; do
     git clone https://github.com/Z3Prover/z3.git
     cd z3
     git checkout tags/z3-4.3.1
-    python scripts/mk_make.py
+    python2 scripts/mk_make.py
     cd build
     make
     sudo make install
