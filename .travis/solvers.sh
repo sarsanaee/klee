@@ -20,7 +20,7 @@ for solver in ${SOLVER_LIST}; do
     # Should we install libz3-dbg too?
     # sudo apt-get -y install libz3 libz3-dev
     # can go to a file
-    git clone https://github.com/sarsanaee/z3.gi
+    git clone https://github.com/sarsanaee/z3.git
     cd z3
     git checkout z3-4.3.1-updated
     python2.7 scripts/mk_make.py
