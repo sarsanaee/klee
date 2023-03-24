@@ -18,7 +18,15 @@ for solver in ${SOLVER_LIST}; do
   Z3)
     echo "Z3"
     # Should we install libz3-dbg too?
-    sudo apt-get -y install libz3-4 libz3-dev
+    # sudo apt-get -y install libz3 libz3-dev
+    # can go to a file
+    git clone https://github.com/Z3Prover/z3.git
+    cd z3
+    python scripts/mk_make.py
+    cd build
+    make
+    sudo make install
+    cd ../..
     ;;
   metaSMT)
     echo "metaSMT"
