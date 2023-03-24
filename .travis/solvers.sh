@@ -22,7 +22,7 @@ for solver in ${SOLVER_LIST}; do
     # can go to a file
     git clone https://github.com/Z3Prover/z3.git
     cd z3
-    git checkout tags/z3-4.3.2
+    git checkout tags/z3-4.3.1
     python scripts/mk_make.py
     cd build
     make
