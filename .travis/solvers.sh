@@ -22,11 +22,13 @@ for solver in ${SOLVER_LIST}; do
     # can go to a file
     git clone https://github.com/Z3Prover/z3.git
     cd z3
+    git checkout tags/z3-4.4.0
     python scripts/mk_make.py
     cd build
     make
     sudo make install
     cd ../..
+    
     ;;
   metaSMT)
     echo "metaSMT"
